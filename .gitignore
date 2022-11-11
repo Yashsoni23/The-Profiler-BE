@@ -2,7 +2,7 @@
 
 # dependencies
 /node_modules
-/config.env
+/.env
 # testing
 /coverage
 
