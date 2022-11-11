@@ -7,13 +7,13 @@ const server = http.createServer(app);
 const bodyParser = require('body-parser');
 const cors = require("cors")
 const fileUpload = require("express-fileupload");
-const PORT = process.env.PORT ;
+const port = process.env.PORT ;
 
 // dotenv.config({ path: '/.env' });
-console.log(PORT)
+console.log(port)
 
-app.listen(PORT, () => {
-    console.log(`app started at ${PORT}`);
+app.listen(port, () => {
+    console.log(`app started at ${port}`);
 });
 app.use(fileUpload({
     useTempFiles: true
