@@ -7,7 +7,7 @@ const server = http.createServer(app);
 const bodyParser = require('body-parser');
 const cors = require("cors")
 const fileUpload = require("express-fileupload");
-const port = process.env.PORT ;
+const port = process.env.PORT || 8000;
 
 // dotenv.config({ path: '/.env' });
 console.log(port)
