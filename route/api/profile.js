@@ -70,5 +70,15 @@ router.get("/all_profile",(req,res)=>{
     }
     GetProfiles();
 })
-
+router.get("/:_id",(req,res)=>{
+    const GetProfile = async ()=>{
+        try {
+            const GetProfile = await Profile.find({_id:req.params._id});
+            res.send(GetProfile);
+        } catch (error) {
+            console.log(error);
+        }
+    }
+    GetProfile();
+})
 module.exports = router;
